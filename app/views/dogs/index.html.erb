@@ -1,0 +1,10 @@
+<%= render 'layouts/navbar' %>
+
+
+<h2>Welcome to Doggr <%= current_user.name %></h2>
+<h3>Get your dog play date started!</h3>
+
+<h4>It's simply a click away!</h4>
+
+<p><%= link_to 'Find dogger friend', dog_matches_path(:current_user_id) %></p>
+<p><%= link_to 'Logout!', root_path %></p>

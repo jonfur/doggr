@@ -1,0 +1,34 @@
+<% provide(:title, "Log in") %>
+<!DOCTYPE html>
+<html>
+  <body>
+    <%= render 'layouts/navbar' %>
+    <div class="container">
+      <h1>Log in</h1>
+    <%= form_for(:session, url: login_path) do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: 'form-control', placeholder: 'Enter your email'%>
+      </div>
+ 
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+      </div>
+            <%= f.submit "Log in", class: "btn signup-btn" %>
+    <% end %>
+        <p>New user? <%= link_to "Sign up now!", new_dog_path %></p>
+
+    </div>
+    
+
+  </body>
+</html>
+
+
+
+
+
+
+
+

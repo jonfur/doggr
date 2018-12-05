@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dogone: 1
+  dogtwo: 1
+  chat_id: 1
+
+two:
+  dogone: 1
+  dogtwo: 1
+  chat_id: 1
